@@ -2,12 +2,12 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Java Tomcat V0.1</title>
+    <title>Java Tomcat</title>
     <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
     <link href="styles/style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <h1>This is sample Java tomcat app</h1>
+    <h2>This is sample Java tomcat app v0.1</h2>
     <p>Following jobs were created :-</p>
     <ul> <!-- changed to list in the tutorial -->
       <li>Job.1 - Build the app using the Poll SCM</li>
