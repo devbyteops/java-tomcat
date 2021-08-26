@@ -12,11 +12,11 @@ pipeline {
                 }
             }
         }
-        // stage('Deploy in Staging Environment'){
-        //     steps{
-        //         build job: 'Deploy_Application_Staging_Env'
-        //     }
-        // }
+        stage('Deploy in Staging Environment'){
+            steps{
+                build job: 'deploy-stag-env code pipeline'
+            }
+        }
         // stage('Deploy to Production'){
         //     steps{
         //         timeout(time:5, unit:'DAYS'){
