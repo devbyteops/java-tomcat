@@ -17,13 +17,13 @@ pipeline {
                 build job: 'deploy-app-stag-env'
             }
         }
-        // stage('Deploy to Production'){
-        //     steps{
-        //         timeout(time:5, unit:'DAYS'){
-        //             input message:'Approve PRODUCTION Deployment?'
-        //         }
-        //         build job: 'Deploy_Application_Prod_Env'
-        //     }
-        // }
+        stage('Deploy to Production'){
+            steps{
+                timeout(time:5, unit:'DAYS'){
+                    input message:'Approve Production Deployment?'
+                }
+                build job: 'deploy-app-prod-env'
+            }
+        }
     }
 }
